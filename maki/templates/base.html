@@ -1,0 +1,86 @@
+<!doctype html>
+{% load static i18n %}
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/skeleton.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/layout.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/color.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/et-line.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/owl.transitions.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/retina.css' %}"/>
+
+
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+	<script type="text/javascript" src="{% static 'js/modernizr.custom.js' %}"></script>
+
+    {% block css%}
+    {% endblock%}
+
+
+
+
+    {% block seo %}
+
+    {% endblock %}
+</head>
+
+<body class="royal_preloader">
+
+
+
+
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% include "navbar.html" %}
+{% block content %}
+
+
+
+{% endblock %}
+{% include "footer.html" %}
+
+
+
+
+
+{% block jss %}
+{% endblock %}
+
+
+
+
+
+<script type="text/javascript" src="{% static 'js/jquery-2.1.1.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/royal_preloader.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvpnlHRidMIU374bKM5-sx8ruc01OvDjI"></script>
+
+<script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+
+</body>
+</html>
