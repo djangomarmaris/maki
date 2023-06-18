@@ -1,0 +1,17 @@
+Django==4.0.5
+django-ckeditor==6.1.0
+django-cleanup==5.1.0
+django-crispy-forms==1.12.0
+django-import-export==2.5.0
+django-jazzmin==2.5.0
+django-model-utils==3.1.2
+django-modeltranslation==0.17.3
+django-phonenumber-field==7.0.0
+django-progressive-web-app==0.1.1
+django-pwa==1.0.10
+django-restframework==0.0.1
+django-robots==5.0
+django-suit==2.0a1
+djangorestframework==3.12.2
+Pillow==8.3.1
+pip==22.2.2
